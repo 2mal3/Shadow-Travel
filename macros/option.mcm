@@ -1,0 +1,34 @@
+
+# option <x, y, z> <+, ->
+
+macro option {
+  !IF("$$1" == "+") {
+    execute if score .d$$0 shtr.data matches 1.. run {
+      eq .temp0 shtr.data = .d$$0 shtr.data
+
+      block {
+        scoreboard players remove .temp0 shtr.data 1
+
+        data modify storage shtr:data root.directions append value {$$1$$0: 1b}
+        scoreboard players add .length shtr.data 1
+
+        execute unless score .temp0 shtr.data matches 0 run function $block
+      }
+    }
+  }
+
+  !IF("$$1" == "-") {
+    execute if score .d$$0 shtr.data matches ..-1 run {
+      eq .temp0 shtr.data = .d$$0 shtr.data * _1 const
+
+      block {
+        scoreboard players remove .temp0 shtr.data 1
+
+        data modify storage shtr:data root.directions append value {$$1$$0: 1b}
+        scoreboard players add .length shtr.data 1
+
+        execute unless score .temp0 shtr.data matches 0 run function $block
+      }
+    }
+  }
+}

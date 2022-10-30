@@ -1,0 +1,11 @@
+{
+  "type": "shtr:shadow_lands",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "shtr:shadow_lands",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "shtr:shadow_lands"
+    }
+  }
+}
