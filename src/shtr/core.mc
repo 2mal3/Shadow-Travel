@@ -86,6 +86,6 @@ function uninstall {
   tellraw @a {"text":"Shadow Travel Datapack v0.1.0 by 2mal3 was successfully uninstalled.","color": "green"}
 
   # Disables the datapack
-  datapack disable "file/Shadow-Travel-Datapack"
-  datapack disable "file/Shadow-Travel-Datapack.zip"
+  datapack disable "file/Shadow-Travel"
+  datapack disable "file/Shadow-Travel.zip"
 }
