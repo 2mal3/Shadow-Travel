@@ -8,8 +8,14 @@ A single portal is not very useful, but the more portals that are opened from th
 
 But be careful, if even one ray of light hits the portal in the overworld, it will be destroyed, and staying too long in the shadow dimension also has its consequences.
 
+## 📒 Notes
 
-## Tools used:
+- tested for Fabric and Vanilla in 1.19
+- bug reports and suggestions are best done on [GitHub](https://github.com/2mal3/Shadow-Travel/issues)
+- to uninstall run `/function shtr:core/uninstall`
+
+## Credits
+
 - [Datapack Generators](https://misode.github.io/)
 - [MCStacker](https://mcstacker.net/)
 - [mc-build](https://github.com/mc-build/mc-build)
