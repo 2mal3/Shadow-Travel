@@ -3,7 +3,7 @@ dir clock {
   clock 1s {
     name 1s
 
-    execute as @a at @s run {
+    execute as @a[gamemode=!creative,gamemode=!spectator] at @s run {
       execute if predicate shtr:utilities/in_shadow_lands run {
         scoreboard players add @s shtr.shadowTime 1
 
